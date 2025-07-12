@@ -10,8 +10,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // ✅ Serve the form manually (for local testing only)
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../form-frontend/index.html'));
+  res.send('✅ Backend is live!');
 });
+
 
 // ✅ Handle form submission
 app.post('/submit', (req, res) => {
