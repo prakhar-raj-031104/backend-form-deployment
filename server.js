@@ -25,8 +25,8 @@ app.post('/submit', (req, res) => {
     email,
     password
   };
+const filePath = path.join('/tmp', 'data.json');
 
-  const filePath = path.join(__dirname, 'data.json');
 
   // Read existing data
   let users = [];
