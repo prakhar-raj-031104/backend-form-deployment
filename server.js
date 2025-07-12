@@ -25,6 +25,7 @@ app.post('/submit', (req, res) => {
     email,
     password
   };
+   console.log('User submitted:', newUser);
 const filePath = path.join('/tmp', 'data.json');
 
 
